@@ -138,6 +138,9 @@ int main()
         // cout<<fixed<<p.first<<" "<<p.second<<"\n";
     }
 
-    cout<<"The secret key is: "<<ans<<"\n";
+    ofstream outputfile;
+    outputfile.open("output.txt");
+    outputfile<<"The secret key is: "<<ans<<"\n";
+    outputfile.close();
     return 0;
 }
